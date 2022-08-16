@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Meditation App</title>
+  </head>
+  <body>
+    
+    <!------header--------->
+    <header>
+      <nav>
+          <ul class='nav-bar'>
+              <li class='logo'><a href='#'><img src="./svg/MEDITATE.png"/></a></li>
+              <input type='checkbox' id='check' />
+              <span class="menu">
+                  <li><a href="#hero">Home</a></li>
+                  <li><a href="#app">Meditate</a></li>
+                  <li><a href="#history">Previous Sessions</a></li>
+                  <li><a href="#our-users">Testimonials</a></li>
+                  <li><a href="#yarden">Contact</a></li>
+                  <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+              </span>
+              <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+          </ul>
+      </nav>
+      </header>
+    <!------hero section--------->
+    <section id="hero">
+      <div class="container">
+        <div class="info">
+          <h1>Welcome to meditate</h1>
+          <h2>Now it's time to relax and enjoy</h2>
+          <p>It's time to relax. Time to enjoy. What will you do?
+            Maybe you'll sit down with a good book. Maybe you'll listen to some music. 
+            Maybe you'll take a nap. Or maybe you'll just sit and think. It's up to you.
+            Whatever you do, make sure you take a break.</p>
+          <a href="#app">Take a Dreak</a>
+        </div>
+        <div class="img">
+          <img src="./svg/Meditation-Transparent.png" alt="meditation" width = "600">
+        </div>
+    
+      </div>
+    </section>
+
+    <!------meditation app section--------->
+    <div class="app" id="app">
+      <div class="vid-container">
+        <video loop >
+          <source src="./video/rain.mp4"  type="video/mp4">
+        </video>
+        </div>
+        <div class="time-select">
+          <button data-time="120">2 Minutes</button>
+          <button data-time="300" class="medium-mins">5 Minutes</button>
+          <button data-time="600" class="long-mins">10 Minutes</button>
+        </div>
+        <div class="player-container">
+            <audio class="song">
+                <source src="./sounds/rain.mp3" />
+              </audio>
+              <img src="./svg/play.svg" class="play"></img>
+              <svg class="track-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20"/>
+                </svg>
+              <svg class="moving-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20"/>
+                </svg>
+              <img src="./svg/replay.svg" class="replay"></img>
+            
+                <h3 class="time-display">00:00</h3>      
+      </div>
+      <div class="sound-picker">
+        <button data-sound="./sounds/rain.mp3" data-video="./video/rain.mp4" ><img src="./svg/rain.svg" alt=""></button>
+        <button data-sound="./sounds/beach.mp3" data-video="./video/beach.mp4"><img src="./svg/beach.svg" alt=""></button>
+      </div>
+    </div>
+
+
+        <!----------previous sessions------------->
+        
+        <div class="previous-sessions" id="history">
+        <h1 id="table-headline">Previous Sessions</h1>
+    
+    
+        <table>
+            <tr id="tableheader">
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Age</th>
+                <th>Country</th>
+                <th>Gender</th>
+            </tr>
+            <tr>
+                <td>John </td>
+                <td>Doe </td>
+                <td>25 </td>
+                <td>USA </td>
+                <td>Male </td>
+    
+            </tr>
+            <tr>
+                <td>steve </td>
+                <td>Doe </td>
+                <td>28 </td>
+                <td>USA </td>
+                <td>Male </td>
+    
+            </tr>
+            <tr>
+                <td>simo </td>
+                <td>Doe </td>
+                <td>26 </td>
+                <td>USA </td>
+                <td>Male </td>
+    
+            </tr>
+            <tr>
+                <td>karim </td>
+                <td>Doe </td>
+                <td>21 </td>
+                <td>USA </td>
+                <td>Male </td>
+    
+            </tr>
+            <tr>
+                <td>adam </td>
+                <td>Doe </td>
+                <td>20 </td>
+                <td>USA </td>
+                <td>Male </td>
+    
+            </tr>
+            <tr>
+                <td>keven </td>
+                <td>Doe </td>
+                <td>20 </td>
+                <td>USA </td>
+                <td>Male </td>
+    
+            </tr>
+    
+        </table>
+      </div>
+
+    <!-----Testimonials--------->
+        <div class="testimonials">
+          <h1 id="our-users">Our users</h1>
+          <div class="users">
+                <div class="users_member">
+                  <div class="users_img">
+                    <img src="./svg/user1.png" alt="users_image">
+                  </div>
+                  <h3>Paul Doe</h3>
+                  <p class="role">UI developer</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+          </div>
+            <div class="users_member">
+              <div class="users_img">
+                <img src="./svg/user2.png" alt="users_image">
+              </div>
+              <h3>Rosie Meg</h3>
+              <p class="role">Tester</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p></div>
+            <div class="users_member">
+              <div class="users_img">
+                <img src="./svg/user3.png" alt="users_image">
+              </div>
+              <h3>Alex Wood</h3>
+              <p class="role">Support Lead</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis dignissimos.</p>
+            </div>
+          </div>
+        </div>	
+
+    <!------------Personal Details--------------->
+    <div class="testimonials" id="yarden">
+          <div class="users">
+                <div class="users_member">
+                  <div class="users_img">
+                    <img src="./svg/yarden.png" alt="Yarden Peleg">
+                  </div>
+                  <h3>Yarden Peleg</h3>
+                  <p class="role">Entrepreneurship & Business Student <br> ID:313472862 </p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Est quaerat tempora, voluptatum quas facere dolorum aut cumque nihil nulla
+                     harum nemo distinctio quam blanditiis dignissimos.</p>
+                </div>
+            </div>
+    </div>
+
+    <!---------Check if the server is getting a req---------->
+    <a href="#" class="callServer1">Click Me</a>
+
+    <script src="app.js"></script>
+  </body>
+</html>
